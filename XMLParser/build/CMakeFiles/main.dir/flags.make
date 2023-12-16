@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/patrick/Development/C/Programming-Projects/parser_xml/include -I/home/patrick/Development/C/Programming-Projects/parser_xml -I/usr/include/libxml2
+C_INCLUDES = -I/home/patrick/Development/C/Projects/XMLParser/include -I/home/patrick/Development/C/Projects/XMLParser -I/usr/include/libxml2
 
 C_FLAGS =   -w
 

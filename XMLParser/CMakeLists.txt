@@ -16,7 +16,9 @@ include_directories(${PROJECT_SOURCE_DIR})
 include_directories(/usr/include/libxml2)
 
 add_executable(${PROJECT_NAME} 
-
-${SRC}/main.c)
+    ${SRC}/init.c
+    ${SRC}/fetch.c
+    ${SRC}/main.c
+    )
 
 target_link_libraries(${PROJECT_NAME} -lcurl -lpthread -lxml2 -ljson-c) 

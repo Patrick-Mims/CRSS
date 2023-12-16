@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/main.dir/src/main.c.o -o main  -lcurl -lpthread -lxml2 -ljson-c 
+/usr/bin/cc CMakeFiles/main.dir/src/init.c.o CMakeFiles/main.dir/src/fetch.c.o CMakeFiles/main.dir/src/main.c.o -o main  -lcurl -lpthread -lxml2 -ljson-c 

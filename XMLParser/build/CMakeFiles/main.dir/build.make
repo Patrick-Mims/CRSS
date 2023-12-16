@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/patrick/Development/C/Programming-Projects/parser_xml
+CMAKE_SOURCE_DIR = /home/patrick/Development/C/Projects/XMLParser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/patrick/Development/C/Programming-Projects/parser_xml/build
+CMAKE_BINARY_DIR = /home/patrick/Development/C/Projects/XMLParser/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/main.dir/depend.make
@@ -69,31 +69,63 @@ include CMakeFiles/main.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/main.dir/flags.make
 
+CMakeFiles/main.dir/src/init.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/init.c.o: /home/patrick/Development/C/Projects/XMLParser/src/init.c
+CMakeFiles/main.dir/src/init.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/patrick/Development/C/Projects/XMLParser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/init.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/init.c.o -MF CMakeFiles/main.dir/src/init.c.o.d -o CMakeFiles/main.dir/src/init.c.o -c /home/patrick/Development/C/Projects/XMLParser/src/init.c
+
+CMakeFiles/main.dir/src/init.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/init.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/patrick/Development/C/Projects/XMLParser/src/init.c > CMakeFiles/main.dir/src/init.c.i
+
+CMakeFiles/main.dir/src/init.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/init.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/patrick/Development/C/Projects/XMLParser/src/init.c -o CMakeFiles/main.dir/src/init.c.s
+
+CMakeFiles/main.dir/src/fetch.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/fetch.c.o: /home/patrick/Development/C/Projects/XMLParser/src/fetch.c
+CMakeFiles/main.dir/src/fetch.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/patrick/Development/C/Projects/XMLParser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/main.dir/src/fetch.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/fetch.c.o -MF CMakeFiles/main.dir/src/fetch.c.o.d -o CMakeFiles/main.dir/src/fetch.c.o -c /home/patrick/Development/C/Projects/XMLParser/src/fetch.c
+
+CMakeFiles/main.dir/src/fetch.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/fetch.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/patrick/Development/C/Projects/XMLParser/src/fetch.c > CMakeFiles/main.dir/src/fetch.c.i
+
+CMakeFiles/main.dir/src/fetch.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/fetch.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/patrick/Development/C/Projects/XMLParser/src/fetch.c -o CMakeFiles/main.dir/src/fetch.c.s
+
 CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Programming-Projects/parser_xml/src/main.c
+CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Projects/XMLParser/src/main.c
 CMakeFiles/main.dir/src/main.c.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/patrick/Development/C/Programming-Projects/parser_xml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/main.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.o -MF CMakeFiles/main.dir/src/main.c.o.d -o CMakeFiles/main.dir/src/main.c.o -c /home/patrick/Development/C/Programming-Projects/parser_xml/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/patrick/Development/C/Projects/XMLParser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/main.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.c.o -MF CMakeFiles/main.dir/src/main.c.o.d -o CMakeFiles/main.dir/src/main.c.o -c /home/patrick/Development/C/Projects/XMLParser/src/main.c
 
 CMakeFiles/main.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/main.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/patrick/Development/C/Programming-Projects/parser_xml/src/main.c > CMakeFiles/main.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/patrick/Development/C/Projects/XMLParser/src/main.c > CMakeFiles/main.dir/src/main.c.i
 
 CMakeFiles/main.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/main.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/patrick/Development/C/Programming-Projects/parser_xml/src/main.c -o CMakeFiles/main.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/patrick/Development/C/Projects/XMLParser/src/main.c -o CMakeFiles/main.dir/src/main.c.s
 
 # Object files for target main
 main_OBJECTS = \
+"CMakeFiles/main.dir/src/init.c.o" \
+"CMakeFiles/main.dir/src/fetch.c.o" \
 "CMakeFiles/main.dir/src/main.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
+main: CMakeFiles/main.dir/src/init.c.o
+main: CMakeFiles/main.dir/src/fetch.c.o
 main: CMakeFiles/main.dir/src/main.c.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/patrick/Development/C/Programming-Projects/parser_xml/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/patrick/Development/C/Projects/XMLParser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +137,6 @@ CMakeFiles/main.dir/clean:
 .PHONY : CMakeFiles/main.dir/clean
 
 CMakeFiles/main.dir/depend:
-	cd /home/patrick/Development/C/Programming-Projects/parser_xml/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/patrick/Development/C/Programming-Projects/parser_xml /home/patrick/Development/C/Programming-Projects/parser_xml /home/patrick/Development/C/Programming-Projects/parser_xml/build /home/patrick/Development/C/Programming-Projects/parser_xml/build /home/patrick/Development/C/Programming-Projects/parser_xml/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/patrick/Development/C/Projects/XMLParser/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/patrick/Development/C/Projects/XMLParser /home/patrick/Development/C/Projects/XMLParser /home/patrick/Development/C/Projects/XMLParser/build /home/patrick/Development/C/Projects/XMLParser/build /home/patrick/Development/C/Projects/XMLParser/build/CMakeFiles/main.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/main.dir/depend
 

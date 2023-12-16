@@ -1,29 +1,56 @@
+#include <curl/curl.h> 
+#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
 
 #include "parser.h"
-#include <curl/curl.h> 
 
 int main(void)
 {
-    char *url = "";
     CURL *curl = NULL;
+    CURLcode response;
 
-    curl = curl_easy_init();
+    int rc; 
+    pthread_t thread;
+    void *result;
 
-    if(curl == NULL)
-        return EXIT_FAILURE;
+    rc = pthread_create(&thread, NULL, fetch, "White Woman\n");
 
-    curl_easy_setopt(curl, CURLOPT_URL, );
+    printf("[ main => rc ] => %d\n", rc);
 
-    curl_easy_cleanup(curl);
-
-    printf("Good Evening\n");
+    rc = pthread_join(thread, &result);
 
     return 0;  
 }
 
 /*
- * 1. Download an xml rss feed to a directory.
+ * Download an xml rss feed to a directory in a thread.
+ * Files: 
+ * main.c
+ * fetch.c - fetch will be a thread
+ *
+ * 1. setup curl
+ * 2. make request 
+ * 3. save xml
+ * 
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  * 2. Open, read, parse and close the file.
  */

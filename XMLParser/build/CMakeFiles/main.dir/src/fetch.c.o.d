@@ -1,5 +1,5 @@
-CMakeFiles/main.dir/src/main.c.o: \
- /home/patrick/Development/C/Projects/XMLParser/src/main.c \
+CMakeFiles/main.dir/src/fetch.c.o: \
+ /home/patrick/Development/C/Projects/XMLParser/src/fetch.c \
  /usr/include/stdc-predef.h /usr/local/include/curl/curl.h \
  /usr/local/include/curl/curlver.h /usr/local/include/curl/system.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \

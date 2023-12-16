@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/patrick/Development/C/Programming-Projects/parser_xml/src/main.c" "CMakeFiles/main.dir/src/main.c.o" "gcc" "CMakeFiles/main.dir/src/main.c.o.d"
+  "/home/patrick/Development/C/Projects/XMLParser/src/fetch.c" "CMakeFiles/main.dir/src/fetch.c.o" "gcc" "CMakeFiles/main.dir/src/fetch.c.o.d"
+  "/home/patrick/Development/C/Projects/XMLParser/src/init.c" "CMakeFiles/main.dir/src/init.c.o" "gcc" "CMakeFiles/main.dir/src/init.c.o.d"
+  "/home/patrick/Development/C/Projects/XMLParser/src/main.c" "CMakeFiles/main.dir/src/main.c.o" "gcc" "CMakeFiles/main.dir/src/main.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

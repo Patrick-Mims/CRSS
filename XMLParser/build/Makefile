@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/patrick/Development/C/Programming-Projects/parser_xml
+CMAKE_SOURCE_DIR = /home/patrick/Development/C/Projects/XMLParser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/patrick/Development/C/Programming-Projects/parser_xml/build
+CMAKE_BINARY_DIR = /home/patrick/Development/C/Projects/XMLParser/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/Development/C/Programming-Projects/parser_xml/build/CMakeFiles /home/patrick/Development/C/Programming-Projects/parser_xml/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/Development/C/Projects/XMLParser/build/CMakeFiles /home/patrick/Development/C/Projects/XMLParser/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/Development/C/Programming-Projects/parser_xml/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/patrick/Development/C/Projects/XMLParser/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,54 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/fetch.o: src/fetch.c.o
+.PHONY : src/fetch.o
+
+# target to build an object file
+src/fetch.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/fetch.c.o
+.PHONY : src/fetch.c.o
+
+src/fetch.i: src/fetch.c.i
+.PHONY : src/fetch.i
+
+# target to preprocess a source file
+src/fetch.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/fetch.c.i
+.PHONY : src/fetch.c.i
+
+src/fetch.s: src/fetch.c.s
+.PHONY : src/fetch.s
+
+# target to generate assembly for a file
+src/fetch.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/fetch.c.s
+.PHONY : src/fetch.c.s
+
+src/init.o: src/init.c.o
+.PHONY : src/init.o
+
+# target to build an object file
+src/init.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/init.c.o
+.PHONY : src/init.c.o
+
+src/init.i: src/init.c.i
+.PHONY : src/init.i
+
+# target to preprocess a source file
+src/init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/init.c.i
+.PHONY : src/init.c.i
+
+src/init.s: src/init.c.s
+.PHONY : src/init.s
+
+# target to generate assembly for a file
+src/init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/init.c.s
+.PHONY : src/init.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/fetch.o"
+	@echo "... src/fetch.i"
+	@echo "... src/fetch.s"
+	@echo "... src/init.o"
+	@echo "... src/init.i"
+	@echo "... src/init.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

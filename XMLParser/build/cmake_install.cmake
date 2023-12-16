@@ -1,4 +1,4 @@
-# Install script for directory: /home/patrick/Development/C/Programming-Projects/parser_xml
+# Install script for directory: /home/patrick/Development/C/Projects/XMLParser
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/patrick/Development/C/Programming-Projects/parser_xml/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/patrick/Development/C/Projects/XMLParser/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

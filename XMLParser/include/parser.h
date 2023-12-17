@@ -1,13 +1,18 @@
 #ifndef PARSER_H
 #define PARSER_H
 
-struct memory 
+struct MEMORY
 {
     char *response;
     size_t size;
 };
 
-void request_feed();
+struct URL 
+{
+    char *url;
+};
+
+struct URL *alloc_mem();
 void *fetch(CURL *, CURLcode, void *);
 
 #endif

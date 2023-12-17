@@ -102,6 +102,8 @@ CMakeFiles/main.dir/src/fetch.c.o: /home/patrick/Development/C/Projects/XMLParse
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /home/patrick/Development/C/Projects/XMLParser/include/parser.h
 
 CMakeFiles/main.dir/src/init.c.o: /home/patrick/Development/C/Projects/XMLParser/src/init.c \
@@ -313,6 +315,8 @@ CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Projects/XMLParser
 
 /home/patrick/Development/C/Projects/XMLParser/src/init.c:
 
+/usr/include/strings.h:
+
 /usr/include/alloca.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
@@ -426,6 +430,8 @@ CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Projects/XMLParser
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 

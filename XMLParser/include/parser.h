@@ -9,7 +9,8 @@ struct MEMORY
 
 struct URL 
 {
-    char *url;
+    char *rss;
+    char *file;
 };
 
 struct URL *alloc_mem();

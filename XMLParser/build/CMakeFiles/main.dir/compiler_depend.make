@@ -310,8 +310,49 @@ CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Projects/XMLParser
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/local/include/json-c/json.h \
+  /usr/local/include/json-c/arraylist.h \
+  /usr/local/include/json-c/debug.h \
+  /usr/local/include/json-c/json_c_version.h \
+  /usr/local/include/json-c/json_object.h \
+  /usr/local/include/json-c/json_inttypes.h \
+  /usr/local/include/json-c/json_config.h \
+  /usr/include/inttypes.h \
+  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/local/include/json-c/json_types.h \
+  /usr/local/include/json-c/printbuf.h \
+  /usr/local/include/json-c/json_object_iterator.h \
+  /usr/local/include/json-c/json_pointer.h \
+  /usr/local/include/json-c/json_tokener.h \
+  /usr/local/include/json-c/json_util.h \
+  /usr/local/include/json-c/linkhash.h \
   /home/patrick/Development/C/Projects/XMLParser/include/parser.h
 
+
+/usr/local/include/json-c/json_util.h:
+
+/usr/local/include/json-c/json_pointer.h:
+
+/usr/local/include/json-c/json_object_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/local/include/json-c/json_config.h:
+
+/usr/include/stdint.h:
+
+/usr/local/include/json-c/json_inttypes.h:
+
+/usr/local/include/json-c/json_object.h:
+
+/usr/local/include/json-c/json_c_version.h:
+
+/usr/local/include/json-c/debug.h:
+
+/usr/local/include/json-c/json.h:
 
 /home/patrick/Development/C/Projects/XMLParser/src/init.c:
 
@@ -347,6 +388,8 @@ CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Projects/XMLParser
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
+/usr/local/include/json-c/linkhash.h:
+
 /usr/local/include/curl/urlapi.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
@@ -362,6 +405,8 @@ CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Projects/XMLParser
 /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/local/include/json-c/json_types.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -399,6 +444,8 @@ CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Projects/XMLParser
 
 /usr/include/asm-generic/socket.h:
 
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
 /usr/local/include/curl/easy.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h:
@@ -431,6 +478,10 @@ CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Projects/XMLParser
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
+/usr/local/include/json-c/printbuf.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h:
+
 /usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
@@ -461,6 +512,8 @@ CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Projects/XMLParser
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
+/usr/local/include/json-c/arraylist.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
@@ -472,6 +525,8 @@ CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Projects/XMLParser
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/local/include/json-c/json_tokener.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
@@ -500,6 +555,8 @@ CMakeFiles/main.dir/src/main.c.o: /home/patrick/Development/C/Projects/XMLParser
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
+
+/usr/include/inttypes.h:
 
 /usr/local/include/curl/typecheck-gcc.h:
 

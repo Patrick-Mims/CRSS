@@ -2,6 +2,7 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <json-c/json.h>
 
 #include "parser.h"
 
@@ -16,8 +17,7 @@ int main(void)
 
     struct URL *url = alloc_mem();
 
-    // pass a structure to the thread
-    rc = pthread_create(&thread, NULL, fetch, &url);
+    rc = pthread_create(&thread, NULL, fetch_write_json, &url);
 
     printf("[ main => rc ] => %d\n", rc);
     printf("[ main value ] => ", url->rss);

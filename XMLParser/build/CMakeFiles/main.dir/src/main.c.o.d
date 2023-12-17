@@ -85,4 +85,20 @@ CMakeFiles/main.dir/src/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/local/include/json-c/json.h /usr/local/include/json-c/arraylist.h \
+ /usr/local/include/json-c/debug.h \
+ /usr/local/include/json-c/json_c_version.h \
+ /usr/local/include/json-c/json_object.h \
+ /usr/local/include/json-c/json_inttypes.h \
+ /usr/local/include/json-c/json_config.h /usr/include/inttypes.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/local/include/json-c/json_types.h \
+ /usr/local/include/json-c/printbuf.h \
+ /usr/local/include/json-c/json_object_iterator.h \
+ /usr/local/include/json-c/json_pointer.h \
+ /usr/local/include/json-c/json_tokener.h \
+ /usr/local/include/json-c/json_util.h \
+ /usr/local/include/json-c/linkhash.h \
  /home/patrick/Development/C/Projects/XMLParser/include/parser.h

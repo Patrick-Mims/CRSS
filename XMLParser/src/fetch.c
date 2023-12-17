@@ -39,15 +39,12 @@ static size_t callback(void *ptr, size_t size, size_t nmemb, void *data)
     return realsize;
 }
 
-void *fetch(CURL *curl, CURLcode response, void *arg)
+void *fetch_write_json(CURL *curl, CURLcode response, void *arg)
 {
-    struct MEMORY chunk = {0};
     struct URL *u = (struct memory *)arg;
-
-    printf("[ thread => fetch ]\n");
-
     u = alloc_mem();
 
+    struct MEMORY chunk = {0};
     chunk.response = malloc(1);
     chunk.size = 0;
 

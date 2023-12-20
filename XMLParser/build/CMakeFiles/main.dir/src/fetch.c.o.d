@@ -75,15 +75,30 @@ CMakeFiles/main.dir/src/fetch.c.o: \
  /usr/local/include/curl/multi.h /usr/local/include/curl/curl.h \
  /usr/local/include/curl/urlapi.h /usr/local/include/curl/options.h \
  /usr/local/include/curl/header.h /usr/local/include/curl/websockets.h \
- /usr/local/include/curl/typecheck-gcc.h /usr/include/pthread.h \
- /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
- /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
- /usr/include/x86_64-linux-gnu/bits/setjmp.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/local/include/curl/typecheck-gcc.h /usr/local/include/json-c/json.h \
+ /usr/local/include/json-c/arraylist.h /usr/local/include/json-c/debug.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/local/include/json-c/json_c_version.h \
+ /usr/local/include/json-c/json_object.h \
+ /usr/local/include/json-c/json_inttypes.h \
+ /usr/local/include/json-c/json_config.h /usr/include/inttypes.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/local/include/json-c/json_types.h \
+ /usr/local/include/json-c/printbuf.h \
+ /usr/local/include/json-c/json_object_iterator.h \
+ /usr/local/include/json-c/json_pointer.h \
+ /usr/local/include/json-c/json_tokener.h \
+ /usr/local/include/json-c/json_util.h \
+ /usr/local/include/json-c/linkhash.h /usr/include/pthread.h \
+ /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h /usr/include/string.h \
  /usr/include/strings.h \
  /home/patrick/Development/C/Projects/XMLParser/include/parser.h

@@ -21,4 +21,4 @@ add_executable(${PROJECT_NAME}
     ${SRC}/main.c
     )
 
-target_link_libraries(${PROJECT_NAME} -lcurl -lpthread -lxml2 -ljson-c) 
+target_link_libraries(${PROJECT_NAME} -lcurl -lpthread -lxml2 -ljson-c -lpcap) 

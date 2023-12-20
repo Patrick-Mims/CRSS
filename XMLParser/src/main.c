@@ -1,10 +1,27 @@
 #include <curl/curl.h> 
+#include <json-c/json.h>
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <json-c/json.h>
+#include <pcap/pcap.h>
 
 #include "parser.h"
+
+void find_network_device()
+{
+    char *device;
+    char error_buffer[PCAP_ERRBUF_SIZE];
+
+    device = pcap_lookupdev(error_buffer);
+
+    if(device == NULL)
+    {
+        puts("Error");
+        return 1;
+    }
+
+    printf("[ Device ] -> %s\n", device);
+}
 
 int main(void)
 {
@@ -12,17 +29,30 @@ int main(void)
     CURLcode response;
 
     int rc; 
-    pthread_t thread;
+    pthread_t write_thread, parse_thread;
     void *result;
+
+    //pcap_init(PCAP_MMAP_32BIT, errbuf);
+    ///*
 
     struct URL *url = alloc_mem();
 
-    rc = pthread_create(&thread, NULL, fetch_write_json, &url);
+    rc = pthread_create(&write_thread, NULL, fetch_json, &url);
 
     printf("[ main => rc ] => %d\n", rc);
     printf("[ main value ] => ", url->rss);
 
-    rc = pthread_join(thread, &result);
+    rc = pthread_join(write_thread, &result);
+
+    /* thread two */ 
+    //rc = pthread_create(&parse_thread, NULL, parse_json, &url);
+
+    printf("[ main => rc ] => %d\n", rc);
+    printf("[ main value ] => ", url->rss);
+
+    //rc = pthread_join(parse_thread, &result);
+
+    find_network_device();
 
     return 0;  
 }

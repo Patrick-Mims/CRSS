@@ -14,6 +14,8 @@ struct URL
 };
 
 struct URL *alloc_mem();
-void *fetch_write_json(CURL *, CURLcode, void *);
+
+void *fetch_json(CURL *, CURLcode, void *);
+// void *parse_json(void *);
 
 #endif

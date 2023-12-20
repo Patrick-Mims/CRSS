@@ -49,7 +49,7 @@ void *fetch_json(CURL *curl, CURLcode response, void *arg)
     chunk.response = malloc(1);
     chunk.size = 0;
 
-    u->rss = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=bourbon";
+    u->rss = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=vodka";
     u->file = "drinks.json";
 
     curl_global_init(CURL_GLOBAL_ALL);

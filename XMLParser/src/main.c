@@ -32,9 +32,6 @@ int main(void)
     pthread_t write_thread, parse_thread;
     void *result;
 
-    //pcap_init(PCAP_MMAP_32BIT, errbuf);
-    ///*
-
     struct URL *url = alloc_mem();
 
     rc = pthread_create(&write_thread, NULL, fetch_json, &url);
@@ -44,13 +41,8 @@ int main(void)
 
     rc = pthread_join(write_thread, &result);
 
-    /* thread two */ 
-    //rc = pthread_create(&parse_thread, NULL, parse_json, &url);
-
     printf("[ main => rc ] => %d\n", rc);
     printf("[ main value ] => ", url->rss);
-
-    //rc = pthread_join(parse_thread, &result);
 
     find_network_device();
 

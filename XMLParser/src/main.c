@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <pcap/pcap.h>
 
+#include "aes.h"
+#include "list.h"
 #include "parser.h"
 
 void find_network_device()

@@ -6,6 +6,8 @@
 #include <string.h>
 
 #include "parser.h"
+#include "list.h"
+
 /**
  * ptr always points to the delivered data 
  * and the size of the data is nmemb and size is always 1
@@ -42,6 +44,9 @@ static size_t callback(void *ptr, size_t size, size_t nmemb, void *data)
 
 void *fetch_json(CURL *curl, CURLcode response, void *arg)
 {
+    // first node in the list - called head
+    struct Node *head = create_node();
+
     struct URL *u = (struct memory *)arg;
     u = alloc_mem();
 
@@ -49,7 +54,7 @@ void *fetch_json(CURL *curl, CURLcode response, void *arg)
     chunk.response = malloc(1);
     chunk.size = 0;
 
-    u->rss = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=vodka";
+    u->rss = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
     u->file = "drinks.json";
 
     curl_global_init(CURL_GLOBAL_ALL);
@@ -59,7 +64,7 @@ void *fetch_json(CURL *curl, CURLcode response, void *arg)
         return (void *) EXIT_FAILURE;
 
     curl_easy_setopt(curl, CURLOPT_URL, u->rss);
-    curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
+  //  curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, callback);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);
     curl_easy_setopt(curl, CURLOPT_USERAGENT, "libcurl--agent/1.0");
@@ -68,20 +73,29 @@ void *fetch_json(CURL *curl, CURLcode response, void *arg)
     {
         fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(response));
     } else {
-        json_object *list, *idDrink, *strDrink, *strCategory, *strGlass;
+        json_object *drinks, *list, *root;
 
-        json_object *root = json_tokener_parse(chunk.response);
-        json_object *drinks = json_object_object_get(root, "drinks");
+        // get the in memory data 
+        root = json_tokener_parse(chunk.response);
 
-        size_t objects = json_object_array_length(drinks);
+        drinks = json_object_object_get(root, "drinks");
 
-        printf("[ JSON STRING Pretty ] => %s", 
-                json_object_to_json_string_ext(root, JSON_C_TO_STRING_PRETTY));
+        // get the object count
+        size_t object_count = json_object_array_length(drinks);
 
-        for(int i = 0; i < objects; i++)
+//        printf("[ JSON STRING Pretty ] => %s", 
+//               json_object_to_json_string_ext(root, JSON_C_TO_STRING_PRETTY));
+
+        list = json_object_array_get_idx(drinks, 0);
+
+        // iterate the json feed
+        for(int i = 0; i < object_count; i++)
         {
             list = json_object_array_get_idx(drinks, i);
 
+            // push values into the linked list
+            insert(&head, 
+                json_object_get_string(json_object_object_get(list, "strDrink")));
             printf("%s\n%s\n%s\n%s\n\n", 
                 json_object_get_string(json_object_object_get(list, "idDrink")),
                 json_object_get_string(json_object_object_get(list, "strDrink")),
@@ -89,6 +103,7 @@ void *fetch_json(CURL *curl, CURLcode response, void *arg)
                 json_object_get_string(json_object_object_get(list, "strGlass")));
         }
 
+        display(head);
         json_object_put(root);
     }
 
